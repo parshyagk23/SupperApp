@@ -1,0 +1,12 @@
+/* div p{
+        color:#f00;
+        font-family: 'DM Sans';
+        font-size:20px ;
+        font-weight: 300;
+        line-height: 27px;
+        letter-spacing: .4px;
+    } */
+    /* .check p{
+        color: #7c7c7c;
+        letter-spacing: .5px;
+    } */
