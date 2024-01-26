@@ -10,3 +10,8 @@
         color: #7c7c7c;
         letter-spacing: .5px;
     } */
+
+
+    git add .
+    git commit -m "Updated files"
+    git push origin main
