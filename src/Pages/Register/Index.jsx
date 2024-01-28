@@ -1,7 +1,7 @@
 
 import styled from "styled-components"
 import RegisterForm from "../../Components/RegisterForm";
-import { useState } from "react";
+
 
 const Register =()=>{
    

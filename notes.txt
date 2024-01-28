@@ -15,3 +15,4 @@
     git add .
     git commit -m "Updated files"
     git push origin main
+added registerfrom added validation and navigation and localstorage"
