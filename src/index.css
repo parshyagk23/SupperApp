@@ -9,6 +9,247 @@
     font-family: 'DM+Sans',sans-serif;
 }
 body{
-    width: 1280px;
+    width: 100%;
     background-color: #000;
 }
+/* Register Index page style start */
+.Rockimg{
+    margin: 550px 84px 0px 62px;
+}
+.Rockimg h1{
+    color: #FFF;
+    font-family: 'Roboto',sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 141.688%; /* 77.928px */
+    letter-spacing: 1.1px;
+}
+.AppTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 10px; */
+  }
+  .AppTitle h1 {
+    color: #72db73;
+    font-family: "Single Day", cursive;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 94px;
+  }
+  .AppTitle p {
+    font-family: "DM Sans";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+
+  .term-privacy {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+    width: 518px;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: #7c7c7c;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+  .term-privacy span {
+    color: #72db73;
+  }
+
+  /* Register Index page style end */
+  /* RegisterForm page style start */
+
+  .FormData div {
+    display: flex;
+    flex-direction: column;
+  }
+  .FormData input{
+    width: 518px;
+    height: 55px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background: #292929;
+    padding: 20px;
+    font-family: "DM Sans";
+    font-size: 21px;
+    font-weight: 400;
+    color: #7c7c7c;
+  }
+
+  .FormData div p{
+    color: #f00;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0.4px;
+  }
+  .check {
+    display: flex;
+    flex-direction: row;
+    align-self: baseline;
+    gap:10px;
+    
+  }
+   
+  .checkerr {
+    color: #f00;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0.4px;
+    width: 518px;
+  }
+  .check input {
+    width: 30px;
+    height: 20px;
+  }
+
+  .FormData button {
+    all: unset;
+    width: 518px;
+    height: 55px;
+    border-radius: 28px;
+    background: #72db73;
+    font-family: "Roboto";
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 1.6px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+  /* RegisterForm page style end */
+
+  /* Info  page style start */
+  
+  .choose-text h2{
+    color: #72db73;
+    font-family: 'Single Day',cursive;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 94px;
+    margin-bottom: 12px;
+}
+.choose-text h1{
+    color: #FFF;
+    font-family: 'Roboto',sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px; /* 77.928px */
+    letter-spacing: 1.1px;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:27px;
+    margin-bottom: 30px;
+    
+}
+.min-category{
+    color: #f00;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.503px;
+    
+}
+
+.category-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:25px;
+  width: 560px;
+  margin: 0 auto;
+}
+.Nextpage{
+    display: grid;
+    margin: 20px 75px;
+    place-items: end;
+}
+.Nextpage button {
+  all: unset;
+  padding: 15px;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  border-radius: 38.857px;
+  background: #148A08;
+  cursor: pointer;
+}
+
+  /* Info  page style end */
+
+  /* Category-Select  page style Start */
+
+    .selected-ent div{
+        width: 192px;
+        display: flex;
+        padding:10px;
+        gap: 25px;
+        border-radius: 31px;
+        background: #148A08;  
+        text-align:center ;
+    }
+    .selected-ent div p{
+        width: 112px;
+        color: #fff;
+        font-family: 'Roboto';
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+    }
+    .selected-ent div span{
+        color:#085C00;
+        font-size: 25px;
+        font-weight: 400;
+        cursor: pointer;
+     }
+
+  /* Category-Select  page style end */
+
+
+  /* MovieBox  page style Start */
+    .Databox{
+        border-radius: 30px;
+     }
+  .Databox div{
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+   cursor: pointer;
+}
+.Databox h1{
+    color: white;
+    font-family: "DM Sans";
+    font-size: 25px;
+    font-weight: 500;
+}
+  
+  /* MovieBox  page style end */
+
+  

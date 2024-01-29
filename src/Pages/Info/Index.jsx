@@ -1,4 +1,4 @@
-import styled from "styled-components";
+
 import Actions from '../../images/entertainment/Actions.png'
 import Drama from   '../../images/entertainment/Drama.png'
 import Fantasy from '../../images/entertainment/Fantasy.png'
@@ -37,7 +37,7 @@ const Info = () => {
     },
     {
       id:"Western",
-      color:'#84C2FF',
+      color:'#902500',
       image: <img style={{ width: "160px", height: "120px" }} src={Western} />,
     },
     {
@@ -67,11 +67,17 @@ const Info = () => {
     
     
 ];
-const navigate= useNavigate();
+  const navigate= useNavigate();
   const [selectMovies,setselectMovies] = useState([])
   return (
-    <Main selectMovies={selectMovies}>
-      <section className="Choose-category">
+    <main  
+    style={{
+      backgroundColor: '#000',
+      display: 'grid',
+      gridTemplateColumns: '.7fr 1fr'
+    }}
+    >
+      <section >
         <div style={{width:'390px', margin:'0 auto', marginTop:'20px'}} >
         <div className="choose-text"  >
           <h2>Super App</h2>
@@ -115,7 +121,7 @@ const navigate= useNavigate();
         </div>
       </section>
       
-      <section className="Category-section">
+      <section className="Category-section" style={{ marginTop:"50px" }}>
         <div className="category-item">
         {Entertainment_Category.map((category)=>(
           <Box 
@@ -132,85 +138,13 @@ const navigate= useNavigate();
           navigate('/showcase')
         }} 
         disabled={selectMovies.length<3 }
+        style={{  color: selectMovies.length<3 ? '#ffffff62': '#fff' }}
         >Next page</button>
       </div>
       </section>
-    </Main>
+    </main>
   );
       }
 export default Info;
 
-const Main = styled.main`
 
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    .Choose-category{
-        width: 580px;
-        margin: 0 auto;
-    }
-      .choose-text h2{
-        color: #72db73;
-        font-family: 'Single Day',cursive;
-        font-size: 65px;
-        font-weight: 400;
-        line-height: 94px;
-        margin-bottom: 12px;
-    }
-    .choose-text h1{
-        color: #FFF;
-        font-family: 'Roboto',sans-serif;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 80px; /* 77.928px */
-        letter-spacing: 1.1px;
-    }
-    
-.items{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap:27px;
-        margin-bottom: 30px;
-        
-    }
-    .min-category{
-        color: #f00;
-        font-family: 'Roboto';
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 27px;
-        letter-spacing: 0.503px;
-        
-    }
-    .Category-section{
-        width:700px ;
-        margin-top: 50px;
-    }
-    .category-item{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap:15px;
-      width: 600px;
-      margin: 0 auto;
-    }
-    .Nextpage{
-      float: right;
-    margin: 40px 56px 20px 0;
-    }
-    .Nextpage button {
-      all: unset;
-      padding: 15px;
-      color:${(props)=> (props.selectMovies.length<3 ? '#ffffff62': '#fff')} ;
-      text-align: center;
-      font-family: "DM Sans";
-      font-size: 26px;
-      font-weight: 500;
-      line-height: 24px;
-      letter-spacing: 0.5px;
-      border-radius: 38.857px;
-      background: #148A08;
-      cursor: pointer;
-    }
-
-`;

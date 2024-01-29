@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 const RegisterForm = () => {
@@ -80,7 +79,13 @@ const RegisterForm = () => {
     }
   };
   return (
-    <FormData>
+    <section className="FormData" 
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: '21px'
+    }} >
       <div>
         <input
           type="text"
@@ -161,80 +166,8 @@ const RegisterForm = () => {
       <button onClick={handleSubmit} type="submit">
         Sign up
       </button>
-    </FormData>
+    </section>
   );
 };
 
 export default RegisterForm;
-
-const FormData = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 21px;
-
-  div {
-    display: flex;
-    flex-direction: column;
-   
-  }
-
-  input {
-    width: 518px;
-    height: 55px;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    background: #292929;
-    padding: 20px;
-    font-family: "DM Sans";
-    font-size: 21px;
-    font-weight: 400;
-    color: #7c7c7c;
-  }
-  div p {
-    color: #f00;
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 27px;
-    letter-spacing: 0.4px;
-  }
-  .check {
-    display: flex;
-    flex-direction: row;
-    align-self: baseline;
-    gap:10px;
-    
-  }
-   
-  .checkerr {
-    color: #f00;
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 27px;
-    letter-spacing: 0.4px;
-    width: 518px;
-  }
-  .check input {
-    width: 30px;
-    height: 20px;
-  }
-
-  button {
-    all: unset;
-    width: 518px;
-    height: 55px;
-    border-radius: 28px;
-    background: #72db73;
-    font-family: "Roboto";
-    font-size: 29px;
-    font-weight: 600;
-    line-height: 32px;
-    letter-spacing: 1.6px;
-    color: white;
-    text-align: center;
-    cursor: pointer;
-  }
-`;
