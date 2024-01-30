@@ -1,6 +1,5 @@
 
 import RegisterForm from "../../Components/RegisterForm";
-
 const Register = () => {
   return (
     <>
@@ -8,9 +7,10 @@ const Register = () => {
         <section
           style={{
             width: "100%",
-            background:
-              "url(images/Rock.png), lightgray 0px -49.673px / 100% 113.358% no-repeat",
+            
+              
           }}
+          className="bgimgsection"
         >
           <div className="Rockimg">
             <h1>Discover new things on Superapp</h1>

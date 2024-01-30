@@ -1,4 +1,4 @@
-
+import './Component.css'
 const Selected_Category =({data, selectMovies,setselectMovies })=>{
     const HandleClick = ()=>{
         if(selectMovies.includes(data)){

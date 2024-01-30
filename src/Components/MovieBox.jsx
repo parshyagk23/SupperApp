@@ -1,4 +1,4 @@
-
+import './Component.css'
 function Box({ data, setselectMovies, selectMovies }) {
   const HandleClick = () => {
     if (selectMovies.includes(data.id)) {

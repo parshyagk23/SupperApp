@@ -13,6 +13,9 @@ body{
     background-color: #000;
 }
 /* Register Index page style start */
+.bgimgsection{
+  background:url(./assets/Rock.png), lightgray 0px -49.673px / 100% 113.358% no-repeat;
+}
 .Rockimg{
     margin: 550px 84px 0px 62px;
 }
@@ -67,75 +70,7 @@ body{
   }
 
   /* Register Index page style end */
-  /* RegisterForm page style start */
-
-  .FormData div {
-    display: flex;
-    flex-direction: column;
-  }
-  .FormData input{
-    width: 518px;
-    height: 55px;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    background: #292929;
-    padding: 20px;
-    font-family: "DM Sans";
-    font-size: 21px;
-    font-weight: 400;
-    color: #7c7c7c;
-  }
-
-  .FormData div p{
-    color: #f00;
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 27px;
-    letter-spacing: 0.4px;
-  }
-  .check {
-    display: flex;
-    flex-direction: row;
-    align-self: baseline;
-    gap:10px;
-    
-  }
-   
-  .checkerr {
-    color: #f00;
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 27px;
-    letter-spacing: 0.4px;
-    width: 518px;
-  }
-  .check input {
-    width: 30px;
-    height: 20px;
-  }
-
-  .FormData button {
-    all: unset;
-    width: 518px;
-    height: 55px;
-    border-radius: 28px;
-    background: #72db73;
-    font-family: "Roboto";
-    font-size: 29px;
-    font-weight: 600;
-    line-height: 32px;
-    letter-spacing: 1.6px;
-    color: white;
-    text-align: center;
-    cursor: pointer;
-  }
-
-
-  /* RegisterForm page style end */
-
+  
   /* Info  page style start */
   
   .choose-text h2{
@@ -201,55 +136,7 @@ body{
 
   /* Info  page style end */
 
-  /* Category-Select  page style Start */
+ 
 
-    .selected-ent div{
-        width: 192px;
-        display: flex;
-        padding:10px;
-        gap: 25px;
-        border-radius: 31px;
-        background: #148A08;  
-        text-align:center ;
-    }
-    .selected-ent div p{
-        width: 112px;
-        color: #fff;
-        font-family: 'Roboto';
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 26px;
-        letter-spacing: 0.5px;
-    }
-    .selected-ent div span{
-        color:#085C00;
-        font-size: 25px;
-        font-weight: 400;
-        cursor: pointer;
-     }
-
-  /* Category-Select  page style end */
-
-
-  /* MovieBox  page style Start */
-    .Databox{
-        border-radius: 30px;
-     }
-  .Databox div{
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-   cursor: pointer;
-}
-.Databox h1{
-    color: white;
-    font-family: "DM Sans";
-    font-size: 25px;
-    font-weight: 500;
-}
   
-  /* MovieBox  page style end */
-
   

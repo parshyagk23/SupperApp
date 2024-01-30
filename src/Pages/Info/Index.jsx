@@ -1,13 +1,13 @@
 
-import Actions from '../../images/entertainment/Actions.png'
-import Drama from   '../../images/entertainment/Drama.png'
-import Fantasy from '../../images/entertainment/Fantasy.png'
-import Fiction from '../../images/entertainment/Fiction.png'
-import Horrors from '../../images/entertainment/Horrors.png'
-import Music from   '../../images/entertainment/Music.png'
-import Romance from '../../images/entertainment/Romance.png'
-import Thriller from'../../images/entertainment/Thriller.png'
-import Western from '../../images/entertainment/Western.png'
+import Actions from '../../assets/Actions.png'
+import Drama from   '../../assets/Drama.png'
+import Fantasy from '../../assets/Fantasy.png'
+import Fiction from '../../assets/Fiction.png'
+import Horrors from '../../assets/Horrors.png'
+import Music from   '../../assets/Music.png'
+import Romance from '../../assets/Romance.png'
+import Thriller from'../../assets/Thriller.png'
+import Western from '../../assets/Western.png'
 import Box from "../../Components/MovieBox";
 import Selected_Category from "../../Components/Category_Select";
 import { useState } from "react";
@@ -135,7 +135,9 @@ const Info = () => {
         </div>
       <div className="Nextpage">
         <button onClick={()=>{
+          window.localStorage.setItem('selectMovies',JSON.stringify(selectMovies));
           navigate('/showcase')
+
         }} 
         disabled={selectMovies.length<3 }
         style={{  color: selectMovies.length<3 ? '#ffffff62': '#fff' }}

@@ -1,9 +1,14 @@
 import React from 'react'
+import Userinfo from '../../Components/Userinfo'
+import WetherApi from '../../Components/WetherApi'
+import Notes from '../../Components/Notes'
 
 const Showcase = () => {
   return (
     <div>
-      <h1>Showcase</h1>
+      <Userinfo/>
+      <WetherApi/>
+      <Notes/>
     </div>
   )
 }
