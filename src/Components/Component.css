@@ -365,7 +365,7 @@ font-weight: 500;
     justify-content: end;
   }
   .newTitle{
-    height: 38vh;
+    
     background: rgba(0, 0, 0, 0.74);
     display: flex;
     flex-direction: column;
@@ -373,10 +373,10 @@ font-weight: 500;
     position: absolute;
     width: 27.89vw;
   }
-  .newTitle h1{
+  .newTitle p{
       font-size: 27px;
       font-weight: 600;
-      line-height: 45px;
+      line-height: 30px;
       letter-spacing: 0.7px;
       padding-bottom: 15px;
   }
@@ -396,5 +396,26 @@ font-weight: 500;
     line-height: 29px;
   }
   /* NewApi page style end */
+  /* Movie page style end */
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+
+  }
+    .header h1{
+      color: #72db73;
+      font-family: "Single Day", cursive;
+      font-size: 32px;
+      font-weight: 400;
+      
+    }
+    .header img{
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+  /* Movie page style end */
 
 

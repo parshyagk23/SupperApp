@@ -1,9 +1,9 @@
 import React from 'react'
 import Userinfo from '../../Components/Userinfo'
-import WetherApi from '../../Components/WetherApi'
+import FetchWetherApi from '../../Components/Api/FetchWetherApi'
 import Notes from '../../Components/Notes'
 import Timer from '../../Components/Timer'
-import NewsApi from '../../Components/NewsApi'
+import FetchNewsApi from '../../Components/Api/FetchNewsApi'
 import { useNavigate } from 'react-router-dom'
 const Showcase = () => {
   const navigate  = useNavigate()
@@ -11,10 +11,10 @@ const Showcase = () => {
     <main  className='showcase' >
       
       <Userinfo/>
-      <WetherApi/>
+      <FetchWetherApi/>
       <Notes/>
       <Timer/>
-      <NewsApi/>
+      <FetchNewsApi/>
       <div className='Brower' >
         <button onClick={()=>{navigate('/movie')}} >Browse</button>
       </div>

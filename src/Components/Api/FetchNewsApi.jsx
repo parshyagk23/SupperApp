@@ -1,12 +1,13 @@
 
 import { useState,useEffect } from "react";
 import axios from "axios";
-import newsimage from '../assets/newsimg.png'
-const NewsApi = () => {
+import newsimage from '../../assets/newsimg.png'
+const FetchNewsApi = () => {
 
   const [news, setNews] = useState(null);
   const [error,setErr]= useState(null);
   const [loading, setLoading] = useState(false)
+  
   const NewsCategoryselection =()=>{
 
     const categoryArr = ['general','business','entertainment','health','seience','sports','technology'];
@@ -17,7 +18,7 @@ const NewsApi = () => {
   const NewsApiKey = import.meta.env.VITE_REACT_APP_NEWS_API_KEY
   
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchNewsData = async () => {
       setLoading(true)
       try {
         const NewCategory =NewsCategoryselection();
@@ -33,7 +34,7 @@ const NewsApi = () => {
         setLoading(false)
       }
     };
-  fetchData()
+  fetchNewsData()
    
   }, []);
 
@@ -47,7 +48,7 @@ const NewsApi = () => {
         <img src= {newsimgs} alt=""  />
         <div className="newTitle">
          
-          {loading?(<h1>Loading</h1>):news?(<h1> {news.title} </h1>):(<h1>{error}</h1>)}
+          {loading?(<h1>Loading</h1>):news?(<p> {news.title} </p>):(<h1>{error}</h1>)}
          
           {loading?(<p>Loading</p>):news?(<p> {new Date(news.publishedAt).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} </p>):(<p>{error}</p>)}
         </div>
@@ -60,4 +61,4 @@ const NewsApi = () => {
   );
 };
 
-export default NewsApi;
+export default FetchNewsApi;
