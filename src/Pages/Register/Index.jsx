@@ -3,12 +3,11 @@ import RegisterForm from "../../Components/RegisterForm";
 const Register = () => {
   return (
     <>
-    <main style={{ display: "grid", gridTemplateColumns:'1fr 1fr', backgroundColor: "#000;" }}>
+    <main style={{ display: "grid", gridTemplateColumns:'1fr 1fr', backgroundColor: "#000" }}>
         <section
           style={{
-            width: "100%",
+            width: "50vw",
             
-              
           }}
           className="bgimgsection"
         >
@@ -18,7 +17,7 @@ const Register = () => {
         </section>
         <section style={{ 
                             color: "white", 
-                            width: "100%", 
+                            
                             margin: "0 auto" 
                             }}>
           <div className="AppTitle">

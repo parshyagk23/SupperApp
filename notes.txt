@@ -11,11 +11,11 @@
         letter-spacing: .5px;
     } */
 
-
     git add .
     git commit -m "Updated files"
     git push origin main
 added registerfrom added validation and navigation and localstorage"
 
-//wether API
-https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/mumbai?unitGroup=metric&include=current&key=DK67UUXACAS8CBC94VNVZVS6G&contentType=json
+
+
+'general','business','entertainment','health','seience','sports',technology

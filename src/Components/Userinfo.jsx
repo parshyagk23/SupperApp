@@ -3,10 +3,9 @@ import './Component.css'
 const Userinfo = () => {
   const userData = JSON.parse(window.localStorage.getItem('userInfo'))
   const SelectedMovie = JSON.parse(window.localStorage.getItem('selectMovies'))
-
   
   return (
-    <main className='userinfo'>
+    <main className='userinfo' style={{gridArea:'c1'}} >
       <div className='mainsection' >
       <section style={{gridArea:'s1'}} className="userimg">
        <div>
@@ -18,11 +17,11 @@ const Userinfo = () => {
         <div className='userdata' >
         <p>{userData.name}</p>
         <p>{userData.email}</p>
-        <p style={{fontSize:'31px', fontWeight:'600'}} >{userData.username}</p>
+        <p style={{fontSize:'25px', fontWeight:'600'}} >{userData.username}</p>
         </div>
         </section>
         <section style={{gridArea:'s3'}} className='section3'>
-        <div className='movie'>
+        <div className='movie' style={{ gridTemplateColumns:`${SelectedMovie.length<=5?'1fr 1fr':'1fr 1fr 1fr'}` }}>
           {SelectedMovie.map((movie)=>(
 
           <div key={movie} className='selectedmovie' >

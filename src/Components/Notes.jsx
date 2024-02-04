@@ -8,7 +8,7 @@ const Notes = () => {
          window.localStorage.setItem("notes",JSON.stringify(e.target.value));
     }
   return (
-    <div className='Notes' >
+    <div className='Notes' style={{ gridArea:'c3' }} >
         <h2>All Notes</h2>
         <div>
             

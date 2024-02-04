@@ -18,47 +18,47 @@ const Info = () => {
     {
     id:"Action",
     color:'#FF5209',
-    image: <img style={{ width: "160px", height: "120px" }} src={Actions} />,
+    image: <img style={{ width: "11.05vw", height: "14vh" }} src={Actions} />,
     },
     {
     id:"Drama",
     color:'#D7A4FF',
-    image: <img style={{ width: "160px", height: "120px" }} src={Drama} />,
+    image: <img style={{ width: "11.05vw", height: "14vh" }} src={Drama} />,
     },
     {
       id:"Romance",
       color:'#148A08',
-      image: <img style={{ width: "160px", height: "120px" }} src={Romance} />,
+      image: <img style={{ width: "11.05vw", height: "14vh" }} src={Romance} />,
     },
     {
       id:"Thriller",
       color:'#84C2FF',
-      image: <img style={{ width: "160px", height: "120px" }} src={Thriller} />,
+      image: <img style={{ width: "11.05vw", height: "14vh" }} src={Thriller} />,
     },
     {
       id:"Western",
       color:'#902500',
-      image: <img style={{ width: "160px", height: "120px" }} src={Western} />,
+      image: <img style={{ width: "11.05vw", height: "14vh" }} src={Western} />,
     },
     {
       id:"Horrors",
       color:'#7358FF',
-      image: <img style={{ width: "160px", height: "120px" }} src={Horrors} />,
+      image: <img style={{ width: "11.05vw", height: "14vh" }} src={Horrors} />,
     },
     {
     id:"Fantasy",
     color:'#FF4ADE',
-    image: <img style={{ width: "160px", height: "120px" }} src={Fantasy} />,
+    image: <img style={{ width: "11.05vw", height: "14vh" }} src={Fantasy} />,
     },
     {
       id:"Music",
       color:'#6CD061',
-      image: <img style={{ width: "160px", height: "120px" }} src={Music} />,
+      image: <img style={{ width: "11.05vw", height: "14vh" }} src={Music} />,
       },
     {
     id:"Fiction",
     color:'#FF5209',
-    image: <img style={{ width: "160px", height: "120px" }} src={Fiction} />,
+    image: <img style={{ width: "11.05vw", height: "14vh" }} src={Fiction} />,
     },
     
     
@@ -78,7 +78,7 @@ const Info = () => {
     }}
     >
       <section >
-        <div style={{width:'390px', margin:'0 auto', marginTop:'20px'}} >
+        <div style={{width:'30.49vw', margin:'0 auto', marginTop:'3.16vh'}} >
         <div className="choose-text"  >
           <h2>Super App</h2>
           <h1>Choose Your Entertainment category</h1>
@@ -87,12 +87,17 @@ const Info = () => {
         <div className="items" >
 
             {selectMovies.map((select)=>(
-              <Selected_Category  
-              key={select.id}
-              data={select}
-              selectMovies={selectMovies}
-              setselectMovies={setselectMovies}
+              
+              
+                <Selected_Category  
+                  key={select.id}
+                  data={select}
+                  selectMovies={selectMovies}
+                  setselectMovies={setselectMovies}
               />
+              
+            
+              
             ))};
             </div>
             
@@ -121,7 +126,7 @@ const Info = () => {
         </div>
       </section>
       
-      <section className="Category-section" style={{ marginTop:"50px" }}>
+      <section className="Category-section" style={{ marginTop:"40px" , width:'55vw'}}>
         <div className="category-item">
         {Entertainment_Category.map((category)=>(
           <Box 

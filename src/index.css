@@ -52,9 +52,9 @@ body{
   .term-privacy {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    text-align: left;
-    width: 518px;
+    gap: 10px;
+    text-align: justify;
+    width: 41vw;
     margin: 0 auto;
     margin-top: 25px;
     color: #7c7c7c;
@@ -78,16 +78,16 @@ body{
     font-family: 'Single Day',cursive;
     font-size: 65px;
     font-weight: 400;
-    line-height: 94px;
+    /* line-height: 94px; */
     margin-bottom: 12px;
 }
 .choose-text h1{
     color: #FFF;
     font-family: 'Roboto',sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 600;
-    line-height: 80px; /* 77.928px */
+    /* line-height: 80px; 77.928px */
     letter-spacing: 1.1px;
 }
 
@@ -112,12 +112,12 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap:25px;
-  width: 560px;
+  width: 45.75vw;
   margin: 0 auto;
 }
 .Nextpage{
     display: grid;
-    margin: 20px 75px;
+    margin: 3.116vh 5.85vw;
     place-items: end;
 }
 .Nextpage button {
@@ -135,8 +135,37 @@ body{
 }
 
   /* Info  page style end */
+  /* showcase  page style start */
+  .showcase{
+    
+    display: grid;
+    grid-template-areas: "c1 c3 c5"
+                         "c2 c3 c5"
+                         "c4 c4 c5"     
+      ;
+      gap: 15px;
+      padding: 10px 10px;
+      place-content: center;
+  }
+  /* showcase  page style end */
 
- 
+ .Brower button{
+  all: unset;
+  position: absolute;
+  bottom: 15px;
+  right: 12px;
+  padding: 10px 18px;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  border-radius: 38.857px;
+  background: #148A08;
+  cursor: pointer;
+  color: #FFF;
+ }
 
   
   

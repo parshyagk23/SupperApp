@@ -5,39 +5,37 @@ const WetherApi = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [currentTime, setCurrentTime] = useState(new Date());
-  
-  useEffect(()=>{
+
+  useEffect(  ()=>{
     const invervalID = setInterval(()=>{
       setCurrentTime(new Date());
     },1000)
     return ()=> clearInterval(invervalID)
   },[])
-  const FormatCurrentTime = `${currentTime.toLocaleDateString().replace(/\//g, '-')} ${currentTime.toLocaleTimeString(undefined, {
+  const FormatCurrentTime = `${currentTime.toLocaleDateString('en-IN', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).replace(/\//g, '-')} ${currentTime.toLocaleTimeString(undefined, {
     hour: 'numeric',
     minute: 'numeric',
   })}`;
 
 
-  // const CurrentTime=()=>{
-  //   const date = new Date();
-  //   var currentHours = date.getHours();  
-  //   var currentMinutes = date.getMinutes(); 
-  //   let newformat = currentHours>=12 ?"PM":"AM"; 
-  //   // currentHours = currentHours % 12;
-  //   return currentHours+":"+currentMinutes+" "+ newformat;
-  // }
+ const WetherApiKey = import.meta.env.VITE_REACT_APP_WETHER_API_KEY
+ 
   useEffect(() => {
     setLoading(true);
     fetch(
-        "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/mumbai?unitGroup=metric&include=current&key=DK67UUXACAS8CBC94VNVZVS6G&contentType=json"
+        `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/mumbai?unitGroup=metric&include=current&key=${WetherApiKey}&contentType=json`
     )
     .then((res)=>res.json())
     .then((data)=>setWether(data))
-    .catch((err)=> setError(setError(err)))
+    .catch((err)=> setError(err))
     .finally(()=> setLoading(false))
   }, []);
   return (
-    <main>
+    <main style={{ gridArea:'c2' ,width: "32.52vw",  }} >
       <div className="wetherinfo">
         <div className="Datetime">
           {/* {loading? (<h1>Loading...</h1>): wether?(<h1>{wether.days[0].datetime}</h1>):(<>{error}</>)} */}
@@ -48,7 +46,7 @@ const WetherApi = () => {
           <div className="forcasts" >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="62"
+              width="60"
               height="57"
               viewBox="0 0 62 57"
               fill="none"
@@ -58,7 +56,7 @@ const WetherApi = () => {
                 fill="white"
               />
             </svg>
-            {loading? (  <p style={{paddingTop: '10px'}} >Loading..</p>): wether?(<p style={{paddingTop: '10px'}} >{wether.days[0].conditions}</p>):(<p style={{paddingTop: '10px'}} >{error}</p>)}
+            {loading? (  <p style={{paddingTop: '5px'}} >Loading..</p>): wether?(<p style={{paddingTop: '5px'}} >{wether.days[0].conditions}</p>):(<p style={{paddingTop: '5px'}} >{error}</p>)}
             
           </div>
           <div className="line" ></div>
@@ -66,7 +64,7 @@ const WetherApi = () => {
             {loading? (<h1>Loading...</h1>): wether?(<h1>{wether.days[0].temp}°C</h1>):(<>{error}</>)}
             {/* <h1> 24°C</h1> */}
             <div style={{display: 'flex',
-                        paddingTop: '12px'}}     >
+                        paddingTop: '5px'}}     >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -103,7 +101,7 @@ const WetherApi = () => {
               {/* <p>3.7km/h Wind</p> */}
             </div>
             <div  style={{display: 'flex',
-                        paddingTop: '20px',gap: '11px'}} >
+                        paddingTop: '9px',gap: '11px'}} >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
@@ -132,3 +130,5 @@ const WetherApi = () => {
 };
 
 export default WetherApi;
+  
+ 

@@ -86,7 +86,7 @@ const RegisterForm = () => {
       alignItems: 'center',
       gap: '21px'
     }} >
-      <div>
+      <div className="inputindex" >
         <input
           type="text"
           name="name"
@@ -100,7 +100,7 @@ const RegisterForm = () => {
         />
         <p>{errors.name}</p>
       </div>
-      <div>
+      <div className="inputindex">
         <input
           type="text"
           name="username"
@@ -114,7 +114,7 @@ const RegisterForm = () => {
         />
         <p>{errors.username}</p>
       </div>
-      <div>
+      <div className="inputindex">
         <input
           type="text"
           name="email"
@@ -128,7 +128,7 @@ const RegisterForm = () => {
         />
         <p>{errors.email}</p>
       </div>
-      <div>
+      <div className="inputindex">
         <input
           type="text"
           name="mobile"
@@ -142,7 +142,7 @@ const RegisterForm = () => {
         />
         <p>{errors.mobile}</p>
       </div>
-      <div >
+      <div style={{ width:'40.375vw' }} >
         <div className="check">
         <input
           type="checkbox"
