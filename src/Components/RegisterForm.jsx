@@ -80,12 +80,7 @@ const RegisterForm = () => {
   };
   return (
     <section className="FormData" 
-    style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      gap: '21px'
-    }} >
+     >
       <div className="inputindex" >
         <input
           type="text"
@@ -142,7 +137,7 @@ const RegisterForm = () => {
         />
         <p>{errors.mobile}</p>
       </div>
-      <div style={{ width:'40.375vw' }} >
+      <div  >
         <div className="check">
         <input
           type="checkbox"

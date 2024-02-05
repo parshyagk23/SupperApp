@@ -13,8 +13,19 @@ body{
     background-color: #000;
 }
 /* Register Index page style start */
+.register-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #000; 
+}
+.registerform{
+  color: white;
+  width: 41vw;
+  margin: 0 auto; 
+}
 .bgimgsection{
   background:url(./assets/Rock.png), lightgray 0px -49.673px / 100% 113.358% no-repeat;
+  width: 50vw;
 }
 .Rockimg{
     margin: 550px 84px 0px 62px;
@@ -68,7 +79,7 @@ body{
   .term-privacy span {
     color: #72db73;
   }
-
+ 
   /* Register Index page style end */
   
   /* Info  page style start */
@@ -168,4 +179,36 @@ body{
  }
 
   
+  /* media  */
+
+  @media (max-width:700px) {
+    .register-main{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .bgimgsection{
+      width: 100vw;
+    }
+    .registerform{
+      width: 93vw;
+    }
+    
+    .FormData{
+        width: 79vw;
+        margin: 0 auto;   
+    }
+    .FormData input{
+     width: 80vw;
+    }
   
+    .check input {
+      width: 5vw;
+    }
+    .term-privacy{
+      width: 80vw;
+      margin: 20px auto 20px  ;
+    }
+    
+  }
+
+  /* media */

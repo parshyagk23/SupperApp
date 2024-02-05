@@ -51,6 +51,12 @@ font-weight: 500;
 
 /* RegisterForm page style start */
 
+  .FormData{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 21px;
+  }
 .FormData  .inputindex {
     display: flex;
     flex-direction: column;
@@ -82,6 +88,7 @@ font-weight: 500;
     flex-direction: row;
     align-self: baseline;
     gap:10px;
+    width:'40.375vw'
     
   }
    .check label{
@@ -108,8 +115,7 @@ font-weight: 500;
 
   .FormData button {
     all: unset;
-    width: 41vw;
-    height: 9vh;
+    padding: 15px;
     border-radius: 28px;
     background: #72db73;
     font-family: "Roboto";
@@ -418,4 +424,6 @@ font-weight: 500;
 
   /* Movie page style end */
 
+/* media */
 
+/* media */

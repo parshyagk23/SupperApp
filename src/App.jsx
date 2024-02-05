@@ -1,5 +1,4 @@
-
-import './App.css'
+import './Components/Component.css'
 import { Route,Routes } from 'react-router-dom'
 import Register from './Pages/Register/Index'
 import Info from './Pages/Info/Index'

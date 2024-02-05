@@ -3,23 +3,16 @@ import RegisterForm from "../../Components/RegisterForm";
 const Register = () => {
   return (
     <>
-    <main style={{ display: "grid", gridTemplateColumns:'1fr 1fr', backgroundColor: "#000" }}>
+    <main className="register-main" style={{ }}>
         <section
-          style={{
-            width: "50vw",
-            
-          }}
+        
           className="bgimgsection"
         >
           <div className="Rockimg">
             <h1>Discover new things on Superapp</h1>
           </div>
         </section>
-        <section style={{ 
-                            color: "white", 
-                            
-                            margin: "0 auto" 
-                            }}>
+        <section className="registerform">
           <div className="AppTitle">
             <h1>Super App</h1>
             <p>Create your new account</p>
