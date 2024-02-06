@@ -83,7 +83,20 @@ body{
   /* Register Index page style end */
   
   /* Info  page style start */
-  
+  .info-main{
+    background-color: #000;
+    display: grid;
+    grid-template-columns: .7fr 1fr
+  }
+  .category-box{
+    width:30.49vw;
+     margin:0 auto;
+    margin-Top:30px;
+  }
+  .category-section{
+    margin-top:40px;
+     width:55vw
+  }
   .choose-text h2{
     color: #72db73;
     font-family: 'Single Day',cursive;
@@ -123,13 +136,13 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap:25px;
-  width: 45.75vw;
+  width: 54.75vw;
   margin: 0 auto;
 }
 .Nextpage{
-    display: grid;
-    margin: 3.116vh 5.85vw;
-    place-items: end;
+  display: flex;
+  margin: 3.116vh 2.85vw;
+  justify-content: end;
 }
 .Nextpage button {
   all: unset;
@@ -179,9 +192,10 @@ body{
  }
 
   
-  /* media  */
+  /* media 770px  */
 
-  @media (max-width:700px) {
+  @media (max-width:770px) {
+    /* Regiter */
     .register-main{
       display: grid;
       grid-template-columns: 1fr;
@@ -200,7 +214,8 @@ body{
     .FormData input{
      width: 80vw;
     }
-  
+
+
     .check input {
       width: 5vw;
     }
@@ -209,6 +224,62 @@ body{
       margin: 20px auto 20px  ;
     }
     
+  
+   /* Regiter */
+   /* Info */
+    .info-main{
+      grid-template-columns: 1fr;
+      width: 90vw;
+      margin: 0 auto;
+    }
+    .category-box{
+      width: 90vw;
+    }
+    .category-section{
+      width: 90vw;
+    }
+    .category-item{
+      width: 78vw;
+    }
+    .Databox{
+      width: 23vw;
+    }
+    .choosed-item{
+      width: 53vw;
+    }
+    
   }
 
-  /* media */
+
+   /* Info */
+
+  /* media 770px */
+  /* media 550px */
+  @media (max-width:550px) {
+  
+  .category-item{
+    grid-template-columns: 1fr 1fr;
+    width: 75vw;
+  }
+  .items{
+  
+    grid-template-columns: 1fr;
+    margin-bottom:0 ;
+  }
+
+  .Databox{
+    width: 34vw;
+  }
+}
+  /* media 550px */
+  /* media 300px */
+
+@media (max-width:330px){
+  .category-item{
+    width: 78vw;
+  }
+  .Databox{
+    width: 48vw;
+  }
+}
+  /* media 3000px */

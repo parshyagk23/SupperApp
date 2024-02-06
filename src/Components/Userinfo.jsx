@@ -13,14 +13,14 @@ const Userinfo = () => {
        </div>
       </section>
       
-      <section style={{gridArea:'s2'}} className='secction2'>
+      <section style={{gridArea:'s2' ,height:'90px'}} className='secction2'>
         <div className='userdata' >
         <p>{userData.name}</p>
         <p>{userData.email}</p>
         <p style={{fontSize:'25px', fontWeight:'600'}} >{userData.username}</p>
         </div>
         </section>
-        <section style={{gridArea:'s3'}} className='section3'>
+        <section style={{gridArea:'s3' , height:"90px"}} className='section3'>
         <div className='movie' style={{ gridTemplateColumns:`${SelectedMovie.length<=5?'1fr 1fr':'1fr 1fr 1fr'}` }}>
           {SelectedMovie.map((movie)=>(
 

@@ -30,7 +30,7 @@
 /* MovieBox  page style Start */
 .Databox{
     border-radius: 30px;
-    width: 13.06vw;
+    width: 15.06vw;
  }
 .Databox div{
 border-radius: 24px;
@@ -133,7 +133,7 @@ font-weight: 500;
 /* UserInfo page style Start */
   .userinfo{ 
     width: 32.32vw;
-    height: 37.88vh ;
+    
     border-radius: 34px;
     background: #5746EA;
     
@@ -148,11 +148,12 @@ font-weight: 500;
     
     ;
     padding-top:20px;
-    gap:10px;
+    gap:5px;
   }
   .userimg ,.userimg img {
     width: 9.89vw;
-    height: 34.56vh ;
+    height: 220px;
+    
   }
   .userdata{
     display: flex;
@@ -175,7 +176,7 @@ font-weight: 500;
   }
   .selectedmovie{
     /* width: 16.89vw; */
-    height: 5.6vh;
+    
     border-radius: 21px;
     color: #FFF;
     background-color:#9F94FF;
@@ -199,7 +200,7 @@ font-weight: 500;
   }
   .Datetime{
     width: 32.52vw;
-    height: 5.12vh;
+   
     border-radius: 19px 19px 0 0;
     background: #FF4ADE;
     color: #FFF;
@@ -217,7 +218,7 @@ font-weight: 500;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 32.32vw;
     margin: 0 auto;
-    padding: 8px 14px;
+    padding: 0px 14px;
     color: #FFF;
     font-family: 'Roboto';
   }
@@ -236,7 +237,7 @@ font-weight: 500;
   }
   .line{
     width: 0.8px;
-    height: 11.2vh;
+  
     background: rgb(255, 255, 255);
     margin-top: 20px;
   }
@@ -246,7 +247,7 @@ font-weight: 500;
 
     .Notes{
       width: 25.31vw;
-      height: 63.66vh;
+      
       border-radius: 19px;
       font-family: 'Roboto';
       background: #F1C75B;
@@ -262,13 +263,13 @@ font-weight: 500;
     .Notes div{
 
       width: 24.80vw;
-      height: 45vh;
+      
       margin: 0 auto;
     }
     .Notes div textarea{
       background: #F1C75B;
       width: 24.80vw;
-      height: 45vh;
+      
       border: none;
       outline: none;
       resize: none;
@@ -282,9 +283,9 @@ font-weight: 500;
 
   .timer{
    
-    width: 60.13vw;
+    width: 59vw;
     font-family: 'Roboto';
-    height: 28vh;
+    
     border-radius: 19px;
     background: #1E2343;
     display: flex;
@@ -348,7 +349,7 @@ font-weight: 500;
   /* Timer page style end */
   /* NewApi page style start */
   .newsApi{
-    height: 94  vh;
+    
     width: 27.89vw;
     background: #FFF;
     border-radius: 19px;
@@ -360,11 +361,11 @@ font-weight: 500;
   .newImg img{
     border-radius:19px 19px 0 0;
     width: 27.89vw;
-    height: 60vh;
+    height: 300px;
   }
   .newImg{
     width:  27.89vw;
-    height: 60vh;
+    /* height: 60vh; */
     border-radius:19px 19px 0 0;
     display: flex;
     flex-direction: column;
@@ -392,7 +393,7 @@ font-weight: 500;
     line-height: 25px;
     letter-spacing: 0.4px;
   }
-  
+
   .newdesc p {
     padding:20px 15px;
     color: #272727;
