@@ -8,6 +8,8 @@ import { useNavigate } from 'react-router-dom'
 const Showcase = () => {
   const navigate  = useNavigate()
   return (
+    <>
+    
     <main  className='showcase' >
       
       <Userinfo/>
@@ -15,10 +17,11 @@ const Showcase = () => {
       <Notes/>
       <Timer/>
       <FetchNewsApi/>
-      <div className='Brower' >
-        <button onClick={()=>{navigate('/movie')}} >Browse</button>
-      </div>
     </main>
+        <button className='Brower' onClick={()=>{navigate('/movie')}} >Browse</button>
+    
+      
+    </>
   )
 }
 

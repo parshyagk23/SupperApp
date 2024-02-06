@@ -173,11 +173,10 @@ body{
   }
   /* showcase  page style end */
 
- .Brower button{
+ .Brower{
   all: unset;
-  position: absolute;
-  bottom: 15px;
-  right: 12px;
+  float:right;
+  margin: 0px 32px 0px 0px;
   padding: 10px 18px;
   text-align: center;
   font-family: "DM Sans";
@@ -192,6 +191,44 @@ body{
  }
 
   
+  /* media 1030px  */
+    @media (max-width:1030px){
+      .userinfo,.wetherinfo, .Datetime{
+        width: 40vw;
+      }
+      .timer{
+        width: 67vw;
+      }
+    }
+  /* media 1030px  */
+  /* media 830px  */
+  @media (max-width:830px){
+    .showcase{
+      grid-template-areas: "c1 c3 "
+                           "c2 c3 "
+                           "c5 c4 "     
+      ;
+
+    }
+   .userinfo,.wetherinfo, .Datetime{
+    width: 50vw;
+  }
+  .timer{
+    width: 37vw;
+    flex-direction: column;
+    align-items: center;
+  } 
+  .timerseciton, .Notes  {
+    width: 37vw;
+  }
+  .newsApi,.newImg img, .newTitle{
+    width: 50vw;
+  }
+  .newsApi{
+    height: 600px;
+  }
+}
+  /* media 830px  */
   /* media 770px  */
 
   @media (max-width:770px) {
@@ -247,8 +284,43 @@ body{
     .choosed-item{
       width: 53vw;
     }
+    .showcase{
+      grid-template-areas:
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5";
+}
+    .userinfo , .wetherinfo,.Datetime,.timer,.newsApi,.newImg img ,.newTitle ,.Notes{
+        width: 60vw;
+    }
+    .mainsection{
+      width: 48.06vw;
+    }
+    .timer,.newsApi{
+      height: 600px
+    }
+    .forcast{
+      width: 57vw;
+    }
+    .forcasts{
+      width: 17vw;
+    }
+    .startstop{
+      width: 38vw;
+      margin: 20px auto 0px;
+    }
+    .Notes div{
+      width: 49vw;
+    }
+    .Notes div textarea{
+      
+      width: 45vw;
+    }
+    }
     
-  }
+  
 
 
    /* Info */
@@ -270,16 +342,83 @@ body{
   .Databox{
     width: 34vw;
   }
+  .userinfo , .wetherinfo,.Datetime,.timer,.newsApi,.newImg img ,.newTitle ,.Notes{
+    width: 80vw;
+}
+.mainsection{
+  width: 68.06vw;
+}
+.timer,.newsApi{
+  height: 600px
+}
+.forcast{
+  width: 80vw;
+}
+.forcasts{
+  width: 25vw;
+}
+.startstop{
+  width: 67vw;
+  margin: 20px auto 0px;
+}
+.timerseciton{
+  width: 62vw;
+}
+.Notes div{
+  width: 49vw;
+}
+.Notes div textarea{
+  
+  width: 45vw;
+}
+
+
+
+
 }
   /* media 550px */
   /* media 300px */
 
-@media (max-width:330px){
+@media (max-width:378px){
   .category-item{
     width: 78vw;
   }
   .Databox{
     width: 48vw;
   }
+  .userimg img{
+    width: 60px;
+  }
+  .userinfo , .wetherinfo,.Datetime,.timer,.newsApi,.newImg img ,.newTitle ,.Notes{
+    width: 93vw;
+}
+.mainsection{
+  width: 81.06vw;
+}
+.timer,.newsApi{
+  height: 600px
+}
+.forcast{
+  width: 90vw;
+}
+.forcasts{
+  width: 28vw;
+}
+.startstop{
+  width: 73vw;
+  margin: 20px auto 0px;
+}
+.timerseciton{
+  width: 67vw;
+}
+.Notes div{
+  width: 75vw;
+}
+.Notes div textarea{
+  
+  width: 75vw;
+}
+
+
 }
   /* media 3000px */

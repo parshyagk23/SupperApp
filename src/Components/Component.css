@@ -193,7 +193,7 @@ font-weight: 500;
 
   /* WetherApi page style Start */
   .wetherinfo{
-   
+    width: 32.52vw;
     border-radius: 19px;
     background: #101744;
     
@@ -290,6 +290,9 @@ font-weight: 500;
     background: #1E2343;
     display: flex;
     justify-content: space-around;
+  }
+  .timersection{
+    width: 24vw;
   }
   .timerbtn{
     display: grid;

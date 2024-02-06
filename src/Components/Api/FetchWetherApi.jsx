@@ -35,7 +35,7 @@ const FetchWetherApi = () => {
     .finally(()=> setLoading(false))
   }, []);
   return (
-    <main style={{ gridArea:'c2' ,width: "32.52vw",  }} >
+    <main style={{ gridArea:'c2'   }} >
       <div className="wetherinfo">
         <div className="Datetime">
           {/* {loading? (<h1>Loading...</h1>): wether?(<h1>{wether.days[0].datetime}</h1>):(<>{error}</>)} */}

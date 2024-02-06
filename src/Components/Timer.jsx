@@ -96,7 +96,7 @@ const Timer = () => {
           {({ remainingTime }) => children(remainingTime)}
         </CountdownCircleTimer>
       </section>
-      <section className="timerseciton" style={{    width: '24vw'}}>
+      <section className="timerseciton">
         <div className="timerbtn" >
           <div className="btnHMS" >
             <p>Hours</p>
