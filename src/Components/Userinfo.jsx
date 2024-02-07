@@ -1,5 +1,5 @@
 import './Component.css'
-
+import userimg from '../assets/userprofile.png'
 const Userinfo = () => {
   const userData = JSON.parse(window.localStorage.getItem('userInfo'))
   const SelectedMovie = JSON.parse(window.localStorage.getItem('selectMovies'))
@@ -9,7 +9,7 @@ const Userinfo = () => {
       <div className='mainsection' >
       <section style={{gridArea:'s1'}} className="userimg">
        <div>
-        <img src='/src/assets/userprofile.png'  alt="" />
+        <img src={userimg}  alt="" />
        </div>
       </section>
       

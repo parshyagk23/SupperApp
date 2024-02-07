@@ -10,7 +10,7 @@ const FetchNewsApi = () => {
   
   const NewsCategoryselection =()=>{
 
-    const categoryArr = ['general','business','entertainment','health','seience','sports','technology'];
+    const categoryArr = ['business','crime','education','entertainment','sports'];
     let categoryIndex = Math.floor(Math.random()* categoryArr.length)
     return categoryArr[categoryIndex];
   }
@@ -18,28 +18,30 @@ const FetchNewsApi = () => {
   const NewsApiKey = import.meta.env.VITE_REACT_APP_NEWS_API_KEY
   
   useEffect(() => {
-    const fetchNewsData = async () => {
-      setLoading(true)
-      try {
-        const NewCategory =NewsCategoryselection();
-       
-        const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${NewCategory}&apiKey=${NewsApiKey}`);
-        // Check if response.data is not null before accessing results
-          
-          const index =Math.floor(Math.random()*38)
-          setNews(response.data.articles[index])
-      } catch (error) {
-        setErr(error);
-      }finally{
-        setLoading(false)
-      }
-    };
-  fetchNewsData()
+ 
+  fetchapi();
    
   }, []);
 
-  const newsimgs = loading?newsimage:news?news.urlToImage :newsimage;
-  
+  const fetchapi=()=>{
+    setLoading(true)
+    const NewCategory =NewsCategoryselection();
+    
+    var url =`https://newsdata.io/api/1/news?apikey=${NewsApiKey}&country=in&language=en&category=${NewCategory}`
+   
+    
+    fetch(url)
+        .then(function(response) {
+            return response.json();
+        }).then((data)=>{
+            const index =Math.floor(Math.random()*data.results.length)
+            
+          setNews(data.results[index])
+        }).catch((e)=>{setErr(e)})
+        .finally(()=>{setLoading(false)});
+  }
+
+  const newsimgs = loading?newsimage:news?news.image_url :newsimage;
  
   return (
     <div className="newsApi" style={{ gridArea:'c5' }}>
@@ -50,7 +52,7 @@ const FetchNewsApi = () => {
          
           {loading?(<h1>Loading</h1>):news?(<p> {news.title} </p>):(<h1>{error}</h1>)}
          
-          {loading?(<p>Loading</p>):news?(<p> {new Date(news.publishedAt).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} </p>):(<p>{error}</p>)}
+          {loading?(<p>Loading</p>):news?(<p> {new Date(news.pubDate).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} </p>):(<p>{error}</p>)}
         </div>
       </div>
       <div  className="newdesc" >

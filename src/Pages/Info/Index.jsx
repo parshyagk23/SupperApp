@@ -59,16 +59,10 @@ const Info = () => {
     id:"Fiction",
     color:'#FF5209',
     image: <img style={{  height: "90px" }} src={Fiction} />,
-    },
-    
-    
-    
-    
-    
-    
+    }, 
 ];
-  const navigate= useNavigate();
-  const [selectMovies,setselectMovies] = useState([])
+const [selectMovies,setselectMovies] = useState([])
+const navigate= useNavigate();
   return (
     <main  className='info-main'
     >
@@ -81,19 +75,17 @@ const Info = () => {
         <div className="choosed-item" style={{marginTop:'30px'}} >
         <div className="items" >
 
-            {selectMovies.map((select)=>(
-              
-              
-                <Selected_Category  
-                  key={select.id}
+            {selectMovies.map((select)=>
+           
+            
+             <Selected_Category
+                  key={select}  
                   data={select}
                   selectMovies={selectMovies}
                   setselectMovies={setselectMovies}
-              />
-              
+                  />
+            )};
             
-              
-            ))};
             </div>
             
             
