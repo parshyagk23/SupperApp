@@ -200,6 +200,9 @@ body{
         width: 67vw;
       }
     }
+    .mainsection{
+      width: 39.06vw;
+    }
   /* media 1030px  */
   /* media 830px  */
   @media (max-width:830px){
@@ -296,7 +299,7 @@ body{
         width: 60vw;
     }
     .mainsection{
-      width: 48.06vw;
+      width: 55.06vw;
     }
     .timer,.newsApi{
       height: 600px
@@ -319,9 +322,6 @@ body{
       width: 45vw;
     }
     }
-    
-  
-
 
    /* Info */
 
@@ -346,7 +346,7 @@ body{
     width: 80vw;
 }
 .mainsection{
-  width: 68.06vw;
+  width: 77.06vw;
 }
 .timer,.newsApi{
   height: 600px
@@ -371,29 +371,42 @@ body{
   
   width: 45vw;
 }
-
-
-
+.moviecategory{
+  
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
 
 }
   /* media 550px */
-  /* media 300px */
+  /* media 378px */
 
 @media (max-width:378px){
+  .choose-text h2{
+    font-size: 58px;
+  }
+  .choose-text h1{
+    font-size: 44px;
+  }
+  .category-section{
+   width: 90vw;
+  }
   .category-item{
-    width: 78vw;
+    width: 86vw;
   }
   .Databox{
-    width: 48vw;
+    width: 39vw;
   }
-  .userimg img{
+  
+  .userimg, .userimg img{
     width: 60px;
   }
   .userinfo , .wetherinfo,.Datetime,.timer,.newsApi,.newImg img ,.newTitle ,.Notes{
     width: 93vw;
 }
 .mainsection{
-  width: 81.06vw;
+  width: 91.06vw;
+  gap: 0;
 }
 .timer,.newsApi{
   height: 600px
@@ -418,7 +431,14 @@ body{
   
   width: 75vw;
 }
-
+.timerseciton {
+  width: 79vw;
+}
+.moviecategory{
+  
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
 
 }
-  /* media 3000px */
+  /* media 380px */

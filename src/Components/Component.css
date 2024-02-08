@@ -139,7 +139,7 @@ font-weight: 500;
     
   }
   .mainsection{
-    width:31.06vw ;
+    width:45.06vw ;
     margin:0 auto;
     display: grid;
     grid-template-areas:
@@ -147,7 +147,7 @@ font-weight: 500;
     "s1 s3"
     
     ;
-    padding-top:20px;
+    padding-top:15px;
     gap:5px;
   }
   .userimg ,.userimg img {
@@ -156,6 +156,7 @@ font-weight: 500;
     
   }
   .userdata{
+    width: 243px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -163,6 +164,7 @@ font-weight: 500;
     font-family: 'Roboto';
     line-height: 21px;
     letter-spacing: .42px;
+    margin:0 auto;
   }
   .userdata p{
     font-size: 20px;
@@ -424,6 +426,11 @@ font-weight: 500;
     .header img{
       border-radius: 50%;
       cursor: pointer;
+    }
+    .moviecategory{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap:20px;
     }
 
   /* Movie page style end */

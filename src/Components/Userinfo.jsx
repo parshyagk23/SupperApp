@@ -20,8 +20,8 @@ const Userinfo = () => {
         <p style={{fontSize:'25px', fontWeight:'600'}} >{userData.username}</p>
         </div>
         </section>
-        <section style={{gridArea:'s3' , height:"90px"}} className='section3'>
-        <div className='movie' style={{ gridTemplateColumns:`${SelectedMovie.length<=5?'1fr 1fr':'1fr 1fr 1fr'}` }}>
+        <section style={{gridArea:'s3' , height:"143px"}} className='section3'>
+        <div className='movie' style={{ gridTemplateColumns:`${SelectedMovie.length<=2?'1fr 1fr':'1fr 1fr 1fr'}` }}>
           {SelectedMovie.map((movie)=>(
 
           <div key={movie} className='selectedmovie' >
