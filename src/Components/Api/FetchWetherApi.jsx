@@ -22,10 +22,10 @@ const FetchWetherApi = () => {
   })}`;
 
 
- const WetherApiKey = import.meta.env.VITE_REACT_APP_WETHER_API_KEY
- 
+  
   useEffect(() => {
     setLoading(true);
+    const WetherApiKey = import.meta.env.VITE_REACT_APP_WETHER_API_KEY
     fetch(
         `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/mumbai?unitGroup=metric&include=current&key=${WetherApiKey}&contentType=json`
     )

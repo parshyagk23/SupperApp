@@ -1,6 +1,6 @@
 
 import { useState,useEffect } from "react";
-import axios from "axios";
+
 import newsimage from '../../assets/newsimg.png'
 const FetchNewsApi = () => {
 
@@ -15,17 +15,17 @@ const FetchNewsApi = () => {
     return categoryArr[categoryIndex];
   }
 
-  const NewsApiKey = import.meta.env.VITE_REACT_APP_NEWS_API_KEY
   
   useEffect(() => {
- 
-  fetchapi();
-   
+    
+    fetchapi();
+    
   }, []);
-
+  
   const fetchapi=()=>{
     setLoading(true)
     const NewCategory =NewsCategoryselection();
+    const NewsApiKey = import.meta.env.VITE_REACT_APP_NEWS_API_KEY
     
     var url =`https://newsdata.io/api/1/news?apikey=${NewsApiKey}&country=in&language=en&category=${NewCategory}`
    

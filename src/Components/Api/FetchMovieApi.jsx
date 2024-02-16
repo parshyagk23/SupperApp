@@ -9,8 +9,8 @@ const FetchMovieApi = ({category}) => {
         const FetchMovieData=  async ()=>{
           Setloading(true)
           try{
-
-            const fetchingMovie = await axios.get(`https://www.omdbapi.com/?i=tt3896198&apikey=e0506a27&s=${category}`)
+            const movieApi = import.meta.env.VITE_REACT_APP_MOVIE_API_KEY
+            const fetchingMovie = await axios.get(`https://www.omdbapi.com/?i=tt3896198&apikey=${movieApi}&s=${category}`)
             const responce = fetchingMovie
             const data = responce.data
             Setmovie(data.Search.slice(0,4))
@@ -23,7 +23,7 @@ const FetchMovieApi = ({category}) => {
         FetchMovieData()
 
     },[])
-    // console.log(Movie)
+  
 
   return (
     <section>
