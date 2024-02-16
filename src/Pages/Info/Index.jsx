@@ -130,7 +130,7 @@ const navigate= useNavigate();
           window.localStorage.setItem('selectMovies',JSON.stringify(selectMovies));
           navigate('/showcase')
 
-        }} 
+        }}  
         disabled={selectMovies.length<3 }
         style={{  color: selectMovies.length<3 ? '#ffffff62': '#fff' }}
         >Next page</button>

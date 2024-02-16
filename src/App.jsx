@@ -15,7 +15,7 @@ function App() {
       <Route path='/Info' element={<Info/>} />
       <Route path='/Movie' element={<Movie/>} />
       <Route path='/Showcase' element={<Showcase/>} />
-      <Route path='*' element={<h1>404 page not found 🤔😥</h1>} />
+      <Route path='*' element={<h1 style={{ color:'#FFF', textAlign:'center',fontSize:'60px' }} >404 page not found 🤔😥</h1>} />
     </Routes>
       
     </>
